@@ -1,0 +1,127 @@
+/* Genel sayfa ayarları: Yazı tipi, arka plan rengi ve boşluklar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Sayfa içeriğini ortalamak ve maksimum genişlik vermek için */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Ana başlık stili */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Kullanıcı giriş alanının kutu tasarımı */
+.input-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Metin kutusu (Input) stili */
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buton stili ve üzerine gelince (hover) oluşacak efekt */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+button:hover { background-color: #2980b9; }
+
+/* Kart tasarımı (İstatistikler, Huffman ve LZW bölümleri için) */
+.card {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none; /* Başlangıçta gizli tutuyoruz, butona basılınca  ile görünür */
+}
+
+/* Alt başlıklar */
+h2 { color: #2980b9; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+
+/* Vurgulanan bilgi kutuları (Mavi arkaplanlı) */
+.highlight {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* --- İstatistik Bölümü Tasarımı --- */
+/* İstatistik kutularını yan yana dizmek için Flexbox kullanıyoruz */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: #fdfbf7;
+    padding: 15px;
+    border: 1px dashed #f39c12;
+    border-radius: 8px;
+}
+.stats-box { 
+    flex: 1;
+    text-align: center; 
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.stats-box strong { color: #2c3e50; font-size: 1.1em; }
+.stats-box span { display: block; font-size: 1.5em; font-weight: bold; color: #e74c3c; margin: 10px 0; }
+.stats-box small { display: block; font-size: 0.9em; color: #555; font-family: monospace; background: #eee; padding: 5px; border-radius: 4px; }
+
+/* Tablo Tasarımı (LZW) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 14px;
+}
+th, td { padding: 10px; border: 1px solid #ddd; text-align: center; }
+th { background-color: #3498db; color: white; }
+tr:nth-child(even) { background-color: #f9f9f9; } /* Zebra desenli satırlar */
+
+/* Huffman ağacının çizileceği alanın tasarımı */
+.tree-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    overflow-x: auto; /* Ağaç çok büyürse kaydırma çubuğu çıkar */
+}
+
+/* Hata mesajı stili */
+.error { color: red; font-weight: bold; }

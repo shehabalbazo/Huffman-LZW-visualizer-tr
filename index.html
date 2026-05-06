@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huffman & LZW</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Huffman & LZW Algoritmaları</h1>
+    
+    <div class="input-section">
+        <label for="inputText"><strong>Metin Giriniz: </strong></label>
+        <input type="text" id="inputText" placeholder="Örn: abacadabaacaaca">
+        <button onclick="processData()">Hesapla / Çiz</button>
+        <p id="errorMsg" class="error"></p>
+    </div>
+
+    <div class="card" id="statsCard">
+        <h2>📊 Sıkıştırma İstatistikleri ve Formüller</h2>
+        <div class="stats-container" id="statsDetails">
+            </div>
+    </div>
+
+    <div class="card" id="huffmanCard">
+        <h2>1. Huffman Encoding</h2>
+        <div id="huffmanDetails" class="highlight"></div>
+        <div class="tree-container" id="mermaidContainer">
+            </div>
+    </div>
+
+    <div class="card" id="lzwCard">
+        <h2>2. LZW Encoding</h2>
+        <div id="lzwDetails" class="highlight"></div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Adım</th>
+                    <th>Girdi</th>
+                    <th>Girdi + Geçici</th>
+                    <th>Sözlükte mi?</th>
+                    <th>Geçici</th>
+                    <th>Sözlüğe Ekle</th>
+                    <th>Çıktı</th>
+                </tr>
+            </thead>
+            <tbody id="lzwTableBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
