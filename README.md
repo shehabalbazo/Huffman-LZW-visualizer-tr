@@ -8,7 +8,7 @@ The project demonstrates how classical compression algorithms work in real time 
 
 ## ⚡ Live Demo
 
-🔗 **Try it here:** https://shehabalbazo.github.io/Huffman-LZW-visualizer-tr-/
+🔗 **Try it here:** https://shehabalbazo.github.io/Huffman-LZW-visualizer-tr/
 
 ---
 
